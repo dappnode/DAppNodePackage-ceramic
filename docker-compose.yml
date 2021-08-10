@@ -1,0 +1,9 @@
+version: "3.4"
+services:
+  ceramic.public.dappnode.eth:
+    build:
+      context: node
+    image: "ceramic.public.dappnode.eth:0.1.0"
+    ports:
+      - "70007"
+    restart: unless-stopped
